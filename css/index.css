@@ -13,8 +13,27 @@
     font-family: "Pretendard-Regular";
     box-sizing: border-box;
 } 
-
 ul,li,a {text-decoration: none;}
+
+/* 폰트 사이즈 모음 */
+html {font-size: 15px;}
+/* 3분할 폰트 사이즈 */
+.smallT {font-size: 0.87rem;margin-top: 5%}
+.titleT {font-size: 1rem; font-weight:600;margin-top: 2%}
+.lineT {font-size: 0.87rem;margin-top: 10%; text-decoration: line-through;}
+.costT {font-size: 1rem; color:#FF6700 ;margin-top: 2%}
+.star {font-size: 0.87rem;margin-top: 8%}
+/* 윗사진 아래 폰트 사이즈 */
+.upsmallT {font-size:1rem ;font-weight: 500; padding-top: 20px;}
+.uptitleT {font-size: 1.667rem; font-weight: 700; line-height: 32px; padding:10px 0 ;}
+.upcolorT {font-size:1rem ;font-weight: 500; color: #377C4C;}
+/* 02콘텐츠 폰트 사이즈*/
+.sndT {font-size: 1.667rem;font-weight: 600;margin-top: 4%; line-height: 2.3rem;}
+.sndsmallT {font-size: 1rem; color: #377C4C; margin-top: 1%;}
+/* 03콘텐츠 폰트 사이즈 */
+.trdsmall {font-size: 0.8667rem; margin-top: 1%;}
+.trdtitleT {font-size: 1rem; font-weight: 600; margin-top: 4%;}
+.trdcost {font-size: 1rem;font-weight: 600; margin-top: 4%;}
 
 
 
@@ -68,29 +87,46 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 /* 콘텐츠 시작 */
 
 /* 왼쪽 콘텐츠 */
-.container_side {width:12.5%; height:100%; background-color: aqua;padding-left: 2%; font-size: 60px;font-weight: 800;}
-.container_side div:nth-of-type(1) {position: sticky;top: 0; height: 2029px;}
+.container_side {width:12.5%; height:100%; background-color: aqua;padding-left: 2%; font-size: 4rem;font-weight: 800;}
+/* .container_side div:nth-of-type(1) {position: sticky;top: 0; height: 2029px;} */
+.container_side div {position: relative;}
+.container_side div span {position: sticky; top:0;}
 /* .container_side div:nth-of-type(2) {position: sticky;top: 2089px; height: 2029px;} */
 
 /* 중간 콘텐츠 */
-.leftright {width:87.5%; display: flex; justify-content:space-between;}
+.leftright {width:87.5%; height: fit-content ;display: flex;flex-direction: column;}
 
-.container_left {width: 100%;height: 100%; background-color: pink; display: flex;margin-right: 9.8%;}
+.container_left {width: 87.5%;height: 100%; background-color: pink; display: flex;}
 .pink_left {width: 50%; padding-right: 1%;}
 .pink_left img {width: 100%;}
-.one div:nth-of-type(1) {font-size:15px ;font-weight: 500; padding-top: 20px;}
-.one div:nth-of-type(2) {font-size: 25px; font-weight: 700; line-height: 32px; padding:10px 0 ;}
-.one div:nth-of-type(3) {font-size:15px ;font-weight: 500; color: #377C4C;}
 
-.one_1 {margin-top: 5%;}
-.one_1 img {width: 30.6%; cursor: pointer;}
-.one_1 img:nth-of-type(2) {margin:0 3%;}
-
+.one_1 {margin-top: 5%; display: flex;}
+.one_1 img {width: 100%; cursor: pointer;}
+.one_1 .middle {margin:0 3%;}
 
 .pink_right {width: 50%; padding-left: 1%;}
 .pink_right img {width: 100%;}
+.pink_right {padding-top: 35%;}
 
+.two {margin-top: 5%;}
 
+/* contentsecond 02콘텐츠 시작 */
+.contentsecond {width: 87.5%;height: fit-content; background-color: #8cf8ac;}
+.contentsecond a {width: 100%;}
+.contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
+
+/* contenttrd 03 콘텐츠 시작 */
+.contenttrd {width: 87.5%; height: fit-content;}
+.contenttrd ul {display: flex; width: 30%; justify-content: space-between; margin-top: 1%;}
+.contenttrd ul li:hover {color: #377C4C;}
+.trdtop {display: flex; width: 100%; flex-flow: row wrap;justify-content: space-between; margin-top: 4%;}
+/* .trd1 {float: left;} */
+.TT {width: 70%;}
+.TT div {width: 100%;}
+.trd1 {margin-top: 2%;}
+.trd1:nth-of-type(1) {margin-top: 0%;}
+.trd1:nth-of-type(2) {margin-top: 0%;}
+.trd1:nth-of-type(3) {margin-top: 0%;}
 
 /* 제일 오른쪽 콘텐츠 */
 .container_right {width: 500px; background-color: aqua; height:100%; }
