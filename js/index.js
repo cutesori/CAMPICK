@@ -1,21 +1,41 @@
 $(document).ready(function(){
-    //슬라이더
-    function slide(){
-        $('.slide').stop().animate({marginLeft:"-150%"},800,function(){
-            $('.slide li:first').appendTo('.slide');
-            $('.slide').css("margin-left","-69.5%");
-        });
-    }
+  //슬라이더
+  function slide(){
+      $('.slide').stop().animate({marginLeft:"-150%"},800,function(){
+          $('.slide li:first').appendTo('.slide');
+          $('.slide').css("margin-left","-69.5%");
+      });
+  }
 
-    setInterval(slide,3000);    
+  setInterval(slide,3000);    
 
-    // $("#contents_wrap").height($(screen).height());
-    // 왼쪽 스티키 높이
-    $(".container_side div:nth-of-type(1)").height($(".container_left").height());
-    $(".container_side div:nth-of-type(2)").height($(".contentsecond").height());
-    $(".container_side div:nth-of-type(3)").height($(".contenttrd").height());
-
+  // $("#contents_wrap").height($(screen).height());
 });
+
+function container_side(){
+  // 왼쪽 스티키 높이
+  $(".container_side div:nth-of-type(1)").height($(".container_left").height());
+  $(".container_side div:nth-of-type(2)").height($(".contentsecond").height());
+  $(".container_side div:nth-of-type(3)").height($(".contenttrd").height());
+  //오른쪽 스티키 높이
+  $(".container_right").height(window.innerHeight);
+}
+
+
+
+// window.onload = function(){
+//   container_side();
+// };
+
+$(window).on('load', function(){
+  container_side();
+});
+
+$(window).resize(function(){
+  // 왼쪽 스티키 높이
+  container_side();
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.likeImage');
