@@ -34,14 +34,18 @@ html {font-size: 15px;}
 .trdsmall {font-size: 0.8667rem; margin-top: 1%;}
 .trdtitleT {font-size: 1rem; font-weight: 600; margin-top: 4%;}
 .trdcost {font-size: 1rem;font-weight: 600; margin-top: 4%;}
+/* 푸터 폰트 */
+footer div {font-size: 0.8rem; line-height: 1.1rem;}
 
-
+.one_1 img:hover {opacity: 0.8;}
+.trd1 a img:hover {opacity: 0.8;}
+.contentsecond a:nth-of-type(2) {display: none;}
 
 
 #contents_wrap {
     width: 100%;
-    height:5140px ;
-    background-color: antiquewhite; 
+    height:100% ;
+    
     display: flex; 
     flex-flow: row nowrap; 
     
@@ -52,8 +56,8 @@ html {font-size: 15px;}
 header {width: 100%;display: flex;}
 
 /* 네비 */
-.container_nav{width: 100%; height: 90px; background-color: rgb(0, 47, 255); display: flex;}
-nav {width: 53.4%; height: 100%; background-color: rgb(153, 153, 153);
+.container_nav{width: 100%; height: 90px; display: flex;}
+nav {width: 53.4%; height: 100%; 
     display: flex; flex-direction:row; justify-content:space-between;}
 nav ul {align-content: center;}
 nav ul li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
@@ -71,7 +75,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .container_nav img {margin-top: 3px;}
 
 /* 슬라이더 */
-.sliderwrap {width: 100%; height:auto ; background-color: tomato; overflow: hidden; margin-bottom: 40px;}
+.sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
 .slide {width: 324%;height: 100%; margin-left: -69.5%;}
 .slide li{width: 25%;float: left; padding: 0 0.3%;}
 .slide li img {width: 100%;}  
@@ -79,7 +83,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 /* 콘텐츠 시작 */
 
 /* 왼쪽 콘텐츠 */
-.container_side {width:200px; height:100%; background-color: aqua;padding-left: 2%; font-size: 4rem;font-weight: 800;}
+.container_side {width:200px; height:100%;padding-left: 2%; font-size: 4rem;font-weight: 800;}
 .container_side div {position: relative;}
 .container_side div span {position: sticky; top:0;}
 /* .container_side div:nth-of-type(3) span {position:inherit; top:0;} */
@@ -87,7 +91,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 /* 중간 콘텐츠 */
 .leftright {width:87.5%; height: fit-content ;display: flex;flex-direction: column;}
 
-.container_left {width: 87.5%;height: 100%; background-color: pink; display: flex;}
+.container_left {width: 87.5%;height: 100%; display: flex;}
 .pink_left {width: 50%;}
 .pink_left img {width: 100%;}
 
@@ -102,7 +106,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .two {margin-top: 5%;}
 
 /* contentsecond 02콘텐츠 시작 */
-.contentsecond {width: 87.5%;height: fit-content; background-color: #8cf8ac;}
+.contentsecond {width: 87.5%;height: fit-content; }
 .contentsecond a {width: 100%;}
 .contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
 
@@ -119,13 +123,13 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .trd1 > img {position: absolute; right: 5px; bottom: 58px; cursor: pointer;}
 
 /* 제일 오른쪽 콘텐츠 */
-.container_right {width: 500px; background-color: aqua; height:100%; }
+.container_right {width: 500px;height:100%; }
 /* .container_right a{ position: sticky; top: 0;} */
 .container_right a img{ position: sticky; top: 0;}
 
 /* 푸터 */
 /* .contain_last {width: 70.5%; margin-left: 9%;} */
-footer {width: 35%; height: 130px; background-color: tomato; display: flex; justify-content: space-between;}
+footer {width: 35%; height: 130px;display: flex; justify-content: space-between;}
 /* footer div {position: absolute; left: 10%; line-height: 1.5rem;} */
 footer img {padding: 20px;}
 footer > div{align-content: center; padding-left: 2%;}
@@ -140,8 +144,8 @@ footer > div{align-content: center; padding-left: 2%;}
     .logo {text-align: center;}
     #contents_wrap {
         width: 100%;
-        height:auto ;
-        background-color: antiquewhite; 
+        height:100% ;
+        
         display: flex; 
         flex-flow: row nowrap; 
         
@@ -153,10 +157,10 @@ footer > div{align-content: center; padding-left: 2%;}
     
 
     /* 네비 */
-    .container_nav{width: 100%; height: 200px; background-color: rgb(0, 47, 255); 
+    .container_nav{width: 100%; height: 200px;
         display: flex; flex-direction: column}
     
-    nav {width: 100%; height: 50px; background-color: rgb(153, 153, 153);
+    nav {width: 100%; height: 50px; 
         display: flex; flex-direction:row; justify-content:center; padding: 0 3%;}
     nav ul {align-content: center;}
     nav ul li {float: left; padding-left: 40px; cursor: pointer; font-size: 1rem; }
@@ -176,11 +180,10 @@ footer > div{align-content: center; padding-left: 2%;}
     .container_nav img {margin-top: 3px;}
     
     /* 슬라이더 */
-    .sliderwrap {width: 300%; height:auto ; background-color: tomato; overflow: hidden; margin-bottom: 40px; display: none;}
-    /* .slide {width: 324%; height: 100%; margin-left: -69.5%;}
-    .slide li{width: 25%; float: left;}
-    .slide li img {width: 100%;}  
-     */
+    .sliderwrap {display: none;}
+    /* .slide {width: 320%;height: 100%; margin-left: -65%;}
+    .slide li{width: 24%;float: left; padding: 0 0.3%;}
+    .slide li img {width: 100%;}   */
     /* 콘텐츠 시작 */
     
     /* 왼쪽 콘텐츠 */
@@ -191,7 +194,7 @@ footer > div{align-content: center; padding-left: 2%;}
     /* 중간 콘텐츠 */
     .leftright {width:100%; height: fit-content ;display: flex; flex-direction: column;}
     
-    .container_left {width: 100%; height: 100%; background-color: pink; display: flex; flex-direction: column;padding: 0 3%;}
+    .container_left {width: 100%; height: 100%; display: flex; flex-direction: column;padding: 0 3%;}
     .pink_left {width:100%;}
     .pink_left img {width: 100%;}
     .one img {width: 100%;}
@@ -208,7 +211,7 @@ footer > div{align-content: center; padding-left: 2%;}
     .two {margin-top: 5%;}
     
     /* contentsecond 02콘텐츠 시작 */
-    .contentsecond {width: 100%;height: fit-content; background-color: #8cf8ac; padding: 0 3%;}
+    .contentsecond {width: 100%;height: fit-content; padding: 0 3%;}
     .contentsecond a {width: 100%;}
     .contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
     
@@ -239,13 +242,13 @@ footer > div{align-content: center; padding-left: 2%;}
     .trdcost {font-size: 120%;}
     
     /* 제일 오른쪽 콘텐츠 */
-    .container_right {width:35%; background-color: aqua; height:100%; display: none; }
+    .container_right {width:35%; height:100%; display: none; }
     /* .container_right a{ position: sticky; top: 0;} */
     .container_right a img{ position: sticky; top: 0;}
     
     /* 푸터 */
     /* .contain_last {width: 70.5%; margin-left: 9%;} */
-    footer {width: 100%; height: 130px; background-color: tomato; display: flex; justify-content: space-between;padding: 0 3%;}
+    footer {width: 100%; height: 130px;display: flex; justify-content: space-between;padding: 0 3%;}
     /* footer div {position: absolute; left: 10%; line-height: 1.5rem;} */
     footer img {padding: 20px;}
     footer > div{align-content: center; padding-left: 2%;}
@@ -259,8 +262,8 @@ footer > div{align-content: center; padding-left: 2%;}
     html {font-size: 90%;}
     #contents_wrap {
         width: 100%;
-        height:auto ;
-        background-color: antiquewhite; 
+        height:100% ;
+      
         display: flex; 
         flex-flow: row nowrap; 
         
@@ -272,8 +275,8 @@ footer > div{align-content: center; padding-left: 2%;}
     
     /* 네비 */
     .logo {text-align: center;}
-    .container_nav{width: 100%; height: 200px; background-color: rgb(0, 47, 255); display: flex; flex-direction: column}
-    nav {width: 100%; height: 100%; background-color: rgb(153, 153, 153);
+    .container_nav{width: 100%; height: 200px; display: flex; flex-direction: column}
+    nav {width: 100%; height: 100%;
         display: flex; flex-direction:row; justify-content:center;}
     nav ul {align-content: center;}
     nav ul li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
@@ -293,22 +296,22 @@ footer > div{align-content: center; padding-left: 2%;}
     .container_nav img {margin-top: 3px;}
     
     /* 슬라이더 */
-    .sliderwrap {width: 100%; height:auto ; background-color: tomato; overflow: hidden; margin-bottom: 40px;}
-    .slide {width: 324%;height: 100%; margin-left: -69.5%;}
-    .slide li{width: 25%;float: left; padding: 0 0.3%;}
+    .sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
+    .slide {width: 320%;height: 100%; margin-left: -65%;}
+    .slide li{width: 24%;float: left; padding: 0 0.3%;}
     .slide li img {width: 100%;}  
     
     /* 콘텐츠 시작 */
     
     /* 왼쪽 콘텐츠 */
-    .container_side {width:200px; height:100%; background-color: aqua;padding-left: 2%; font-size: 4rem;font-weight: 800;}
+    .container_side {width:100px; height:100%;padding-left: 2%; font-size: 3rem;font-weight: 800;}
     .container_side div {position: relative;}
     .container_side div span {position: sticky; top:0;}
     /* .container_side div:nth-of-type(3) span {position:inherit; top:0;} */
     /* 중간 콘텐츠 */
     .leftright {width:100%; height: fit-content ;display: flex; flex-direction: column;}
     
-    .container_left {width: 100%; height: 100%; background-color: pink; display: flex; flex-direction: column;padding-right: 3%;}
+    .container_left {width: 100%; height: 100%; display: flex; flex-direction: column;padding-right: 3%;}
     .pink_left {width:100%;}
     .pink_left img {width: 100%;}
     .one img {width: 100%;}
@@ -325,7 +328,7 @@ footer > div{align-content: center; padding-left: 2%;}
     .two {margin-top: 5%;}
     
     /* contentsecond 02콘텐츠 시작 */
-    .contentsecond {width: 100%;height: fit-content; background-color: #8cf8ac; padding-right: 3%;}
+    .contentsecond {width: 100%;height: fit-content;padding-right: 3%;}
     .contentsecond a {width: 100%;}
     .contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
     
@@ -340,13 +343,13 @@ footer > div{align-content: center; padding-left: 2%;}
     .trd1 a img {width: 100%;}
     
     /* 제일 오른쪽 콘텐츠 */
-    .container_right {width:35%; background-color: aqua; height:100%; display: none; }
+    .container_right {width:35%; height:100%; display: none; }
     /* .container_right a{ position: sticky; top: 0;} */
     .container_right a img{ position: sticky; top: 0;}
     
     /* 푸터 */
     /* .contain_last {width: 70.5%; margin-left: 9%;} */
-    footer {width: 100%; height: 130px; background-color: tomato; display: flex; justify-content: space-between;}
+    footer {width: 100%; height: 130px;  display: flex; justify-content: space-between;}
     /* footer div {position: absolute; left: 10%; line-height: 1.5rem;} */
     footer img {padding: 20px;}
     footer > div{align-content: center; padding-left: 2%;}
@@ -359,8 +362,8 @@ footer > div{align-content: center; padding-left: 2%;}
 
     #contents_wrap {
         width: 100%;
-        height:auto ;
-        background-color: antiquewhite; 
+        height:100% ;
+    
         display: flex; 
         flex-flow: row nowrap; 
         
@@ -370,8 +373,8 @@ footer > div{align-content: center; padding-left: 2%;}
     
     header {width: 100%;display: flex;}
     /* 네비 */
-    .container_nav{width: 100%; height: 90px; background-color: rgb(0, 47, 255); display: flex;}
-    nav {width: 75%; height: 100%; background-color: rgb(153, 153, 153);
+    .container_nav{width: 100%; height: 90px; display: flex;}
+    nav {width: 75%; height: 100%;
         display: flex; flex-flow:row wrap; justify-content:space-between;margin-left: 2%;}
     nav ul {align-content: center;}
     nav ul li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
@@ -388,15 +391,16 @@ footer > div{align-content: center; padding-left: 2%;}
     }
     .container_nav img {margin-top: 3px;}
     /* 슬라이더 */
-    .sliderwrap {width: 100%; height:auto ; background-color: tomato; overflow: hidden; margin-bottom: 40px;}
-    .slide {width: 324%;height: 100%; margin-left: -69.5%;}
-    .slide li{width: 25%;float: left; padding: 0 0.3%;}
+    .sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
+    .slide {width: 320%;height: 100%; margin-left: -65%;}
+    .slide li{width: 24%;float: left; padding: 0 0.3%;}
     .slide li img {width: 100%;}  
+ 
     
     /* 콘텐츠 시작 */
-    
+        
     /* 왼쪽 콘텐츠 */
-    .container_side {width:12.5% ; height:100% ; background-color: aqua;padding-left: 2%; font-size: 4rem;font-weight: 800;}
+    .container_side {width:17.5%; height:100%; padding-left: 2%; font-size: 4rem;font-weight: 800;}
     .container_side div {position: relative;}
     .container_side div span {position: sticky; top:0;}
     /* .container_side div:nth-of-type(3) span {position:inherit; top:0;} */
@@ -404,7 +408,7 @@ footer > div{align-content: center; padding-left: 2%;}
     /* 중간 콘텐츠 */
     .leftright {width:87.5%; height: fit-content ;display: flex;flex-direction: column;}
     
-    .container_left {width: 87.5%;height: 100%; background-color: pink; display: flex; flex-direction: column;}
+    .container_left {width: 87.5%;height: 100%; display: flex; flex-direction: column;}
     .pink_left {width: 100%;}
     .pink_left img {width: 100%;}
     
@@ -420,7 +424,7 @@ footer > div{align-content: center; padding-left: 2%;}
     .two {margin-top: 5%;}
     
     /* contentsecond 02콘텐츠 시작 */
-    .contentsecond {width: 87.5%;height: fit-content; background-color: #8cf8ac;}
+    .contentsecond {width: 87.5%;height: fit-content; }
     .contentsecond a {width: 100%;}
     .contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
     
@@ -438,13 +442,13 @@ footer > div{align-content: center; padding-left: 2%;}
     .trd1 a img {width: 100% ;}
     
     /* 제일 오른쪽 콘텐츠 */
-    .container_right {width:35%; background-color: aqua; height:100%; }
+    .container_right {  height:100%;}
     /* .container_right a{ position: sticky; top: 0;} */
-    .container_right a img{ position: sticky; top: 0;}
+    .container_right a img{ position: sticky; top: 0; }
     
     /* 푸터 */
     /* .contain_last {width: 70.5%; margin-left: 9%;} */
-    footer {width: 100%; height: 130px; background-color: tomato; display: flex; justify-content: space-between;}
+    footer {width: 100%; height: 130px;  display: flex; justify-content: space-between;}
     /* footer div {position: absolute; left: 10%; line-height: 1.5rem;} */
     footer img {padding: 20px;}
     footer > div{align-content: center; padding-left: 2%;}
@@ -464,8 +468,8 @@ footer > div{align-content: center; padding-left: 2%;}
 /* .logo {margin-left: 0.5%;} */
 #contents_wrap {
     width: 100%;
-    height:5140px ;
-    background-color: antiquewhite; 
+    height:100% ;
+    /* background-color: antiquewhite;  */
     display: flex; 
     flex-flow: row nowrap; 
     
@@ -476,9 +480,9 @@ footer > div{align-content: center; padding-left: 2%;}
 header {width: 100%;display: flex;}
 
 /* 네비 */
-.container_nav{width: 100%; height: 90px; background-color: rgb(0, 47, 255); display: flex;}
-nav {width: 75%; height: 100%; background-color: rgb(153, 153, 153);
-    display: flex; flex-flow:row wrap; justify-content:space-between;margin-left: 2%;}
+.container_nav{width: 100%; height: 90px; display: flex;}
+nav {width:53%; height: 100%;
+    display: flex; flex-flow:row wrap; justify-content:space-between;margin-left: 3.2%;}
 nav ul {align-content: center;}
 nav ul li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
 nav ul li:nth-of-type(1) {padding-left: 0;}
@@ -495,15 +499,15 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .container_nav img {margin-top: 3px;}
 
 /* 슬라이더 */
-.sliderwrap {width: 100%; height:auto ; background-color: tomato; overflow: hidden; margin-bottom: 40px;}
-.slide {width: 324%;height: 100%; margin-left: -69.5%;}
-.slide li{width: 25%;float: left; padding: 0 0.3%;}
+.sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
+.slide {width: 320%;height: 100%; margin-left: -65%;}
+.slide li{width: 24%;float: left; padding: 0 0.3%;}
 .slide li img {width: 100%;}  
 
 /* 콘텐츠 시작 */
 
 /* 왼쪽 콘텐츠 */
-.container_side {width:12.5%; height:100%; background-color: aqua;padding-left: 2%; font-size: 4rem;font-weight: 800;}
+.container_side {width:17.5%; height:100%; padding-left: 2%; font-size: 4rem;font-weight: 800;}
 .container_side div {position: relative;}
 .container_side div span {position: sticky; top:0;}
 /* .container_side div:nth-of-type(3) span {position:inherit; top:0;} */
@@ -511,7 +515,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 /* 중간 콘텐츠 */
 .leftright {width:87.5%; height: fit-content ;display: flex;flex-direction: column;}
 
-.container_left {width: 87.5%;height: 100%; background-color: pink; display: flex;}
+.container_left {width: 87.5%;height: 100%;  display: flex;}
 .pink_left {width: 50%; padding-right: 1%;}
 .pink_left img {width: 100%;}
 
@@ -526,7 +530,7 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .two {margin-top: 5%;}
 
 /* contentsecond 02콘텐츠 시작 */
-.contentsecond {width: 87.5%;height: fit-content; background-color: #8cf8ac;}
+.contentsecond {width: 87.5%;height: fit-content; }
 .contentsecond a {width: 100%;}
 .contentsecond a img {width: 100%; margin-top: 4%; margin-bottom: 1%; }
 
@@ -544,13 +548,13 @@ nav ul li:nth-of-type(1) {padding-left: 0;}
 .trd1 a img {width: 100% ;}
 
 /* 제일 오른쪽 콘텐츠 */
-.container_right {width: 35%; background-color: aqua; height: auto; }
+.container_right {height: 100%; }
 /* .container_right a{ position: sticky; top: 0;} */
-.container_right a img{ position: sticky; top: 0; width: 100%;}
+.container_right a img{ position: sticky; top: 0; }
 
 /* 푸터 */
 /* .contain_last {width: 70.5%; margin-left: 9%;} */
-footer {width: 100%; height: 130px; background-color: tomato; display: flex; justify-content: space-between;}
+footer {width: 100%; height: 130px; display: flex; justify-content: space-between;}
 /* footer div {position: absolute; left: 10%; line-height: 1.5rem;} */
 footer img {padding: 20px;}
 footer > div{align-content: center; padding-left: 2%;}
