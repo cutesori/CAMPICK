@@ -71,10 +71,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //카테고리
+  // $(function(){
+  //   $('.mainnav>li').mouseover(function(){
+  //     $(this).children('.subnav').stop().slideDown();
+  //   }).mouseout(function(){
+  //     $('.subnav').stop().slideUp();
+  //   });
+  // });
+
+  
   $(function(){
-    $('.mainnav>li').mouseover(function(){
-      $(this).children('.subnav').stop().slideDown();
-    }).mouseout(function(){
-      $('.subnav').stop().slideUp();
+
+    $(".mainnav > li").click(function(){
+      $(".subnav").slideToggle();
+
+      });
+
     });
-  });
+
