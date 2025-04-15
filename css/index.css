@@ -9,7 +9,7 @@
 
 @font-face {
     font-family:'Pretendard-Regular';
-    src:url(/fonts/Pretendard-Regular.otf) format('truetype');
+    src:url(./fonts/Pretendard-Regular.otf) format('truetype');
     }
 
 
@@ -509,7 +509,7 @@ footer > div{align-content: center; padding-left: 2%;}
 
     .pink_right {width: 100%;}
     .pink_right img {width: 100%;}
-    .pink_right {padding-top: 35%;}
+    .pink_right {padding-top: 5%;}
     
     .two {margin-top: 5%;}
     
