@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
   //슬라이더
   function slide(){
       $('.slide').stop().animate({marginLeft:"-142%"},800,function(){
@@ -64,5 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
       img.addEventListener('mouseleave', () => {
         img.src = img.dataset.clicked === 'true' ? img2 : img1;
       });
+    });
+  });
+
+
+  //카테고리
+  $(function(){
+    $('.mainnav>li').mouseover(function(){
+      $(this).children('.subnav').stop().slideDown();
+    }).mouseout(function(){
+      $('.subnav').stop().slideUp();
     });
   });
