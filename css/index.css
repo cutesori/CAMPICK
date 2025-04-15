@@ -9,8 +9,8 @@
 
 @font-face {
     font-family:'Pretendard-Regular';
-    src:url(./fonts/Pretendard-Regular.otf) format('truetype');
-    }
+    src:url(../fonts/Pretendard-Regular.otf) format('truetype');
+}
 
 
 *{
