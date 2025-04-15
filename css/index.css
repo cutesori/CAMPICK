@@ -9,7 +9,7 @@
 
 @font-face {
     font-family:'Pretendard-Regular';
-    src:url(/fonts/Pretendard-Medium.otf) format('truetype');
+    src:url(/fonts/Pretendard-Regular.otf) format('truetype');
     }
 
 
@@ -541,11 +541,6 @@ footer > div{align-content: center; padding-left: 2%;}
     footer > div{align-content: center; padding-left: 2%;}
     
 }
-
-
-
-
-
 
 
 
