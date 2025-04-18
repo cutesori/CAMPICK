@@ -7,22 +7,6 @@
     font-style: normal;
 } */
 
-@font-face {
-    font-family:'Pretendard-Regular';
-    src:url(../fonts/Pretendard-Regular.otf) format('truetype');
-}
-
-
-*{
-    list-style: none;  
-    margin: 0; padding: 0;
-    font-family: "Pretendard-Regular";
-    box-sizing: border-box;
-} 
-ul,li,a {text-decoration: none;}
-
-/* 폰트 사이즈 모음 */
-html {font-size: 15px;}
 /* 3분할 폰트 사이즈 */
 .smallT {font-size: 0.87rem;margin-top: 5%}
 .titleT {font-size: 1rem; font-weight:600;margin-top: 2%}
@@ -180,52 +164,7 @@ footer > div{align-content: center; padding-left: 2%;}
     header {width: 100%;display: flex;}
     
 
-        /* 네비 */
-        .logo {text-align: center;}
-        .container_nav{width: 100%; height: 200px; display: flex; flex-direction: column}
-        nav {width: 100%; height: 50px; 
-            display: flex; flex-direction:row; justify-content:center; padding: 0 3%;}
-        .mainnav {align-content: center;}
-        .mainnav > li {float: left; padding-left: 40px; cursor: pointer; font-size: 1rem; }
-        .mainnav li:nth-of-type(1) {padding-left: 0;}
-        .search {
-            width:80%; 
-            height: 30px; 
-            text-align: center; margin-bottom:0; 
-            border: none; 
-            outline: none; 
-            border-radius: 20px;
-            background: #EBEBEB;
-            color: #fff;
-            
-        }
-        .srh {text-align: center;position: relative;;bottom: 15px;}
-        .container_nav img {margin-top: 3px;}
-    
-        .mainnav > li {
-            position: relative; /* 기준점 역할 */
-        }
-    
-        .subnav {
-            display: none; 
-            position: absolute;
-            top: 100%; /* li 아래에 뜸 */
-            left: 0;
-            background: white;
-            z-index: 999; 
-            width: 120%;
-            height:fit-content;
-            margin-left: -10px;
-            padding-left: 10px;
-            
-        }
-    
-        .subnav li:nth-of-type(1) {padding-top: 40px}
-        .subnav li:nth-of-type(5) {padding-bottom: 10px}
-        .subnav li {padding-top: 10px;}
-        .subnav li a{color: #377C4C; text-decoration: none;}
-        .subnav li a:hover {color: #FF6700;}
-        .subnav li a:active {color: #FF6700;}
+
     /* 슬라이더 */
     .sliderwrap {display: none;}
 
@@ -297,7 +236,7 @@ footer > div{align-content: center; padding-left: 2%;}
 
 /* 중간 사이즈 */
 @media all and (min-width:768px) and (max-width:1023px){
-
+    
     html {font-size: 90%;}
     #contents_wrap {
         width: 100%;
@@ -310,54 +249,6 @@ footer > div{align-content: center; padding-left: 2%;}
     .container {width: 75%; border: 1px solid; margin: 0 auto; height: 100%;}
     header {width: 100%;display: flex;}
 
-    /* 네비 */
-    .logo {text-align: center;}
-    .container_nav{width: 100%; height: 200px; display: flex; flex-direction: column}
-    nav {width: 100%; height: 100%; 
-        display: flex; flex-direction:row; justify-content:center}
-    .mainnav {align-content: center;}
-    .mainnav > li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
-    .mainnav li:nth-of-type(1) {padding-left: 0;}
-    .search {
-        width: 500px; 
-        height: 25px; 
-        text-align: center; margin-top:30px; 
-        border: none; 
-        outline: none; 
-        border-radius: 20px;
-        background: #EBEBEB;
-        color: #fff;
-        
-    }
-    .srh {text-align: center;position: relative;;bottom: 15px;}
-    .container_nav img {margin-top: 3px;}
-
-    .mainnav > li {
-        position: relative; /* 기준점 역할 */
-    }
-
-    .subnav {
-        display: none; 
-        position: absolute;
-        top: 100%; /* li 아래에 뜸 */
-        left: 0;
-        background: white;
-        z-index: 999; 
-        width: 120%;
-        height:fit-content;
-        margin-left: -10px;
-        padding-left: 10px;
-        
-    }
-
-    .subnav li:nth-of-type(1) {padding-top: 40px}
-    .subnav li:nth-of-type(5) {padding-bottom: 10px}
-    .subnav li {padding-top: 10px; width: 50px;}
-    .subnav li a{color: #377C4C; text-decoration: none;}
-    .subnav li a:hover {color: #FF6700;}
-    .subnav li a:active {color: #FF6700;}
-
-    
     /* 슬라이더 */
     .sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
     .slide {width: 320%;height: 100%; margin-left: -65%;}
@@ -432,52 +323,6 @@ footer > div{align-content: center; padding-left: 2%;}
     
     
     header {width: 100%;display: flex;}
-
-
-
-    /* 네비 */
-    .container_nav{width: 100%; height: 90px; display: flex;}
-    nav {width: 53%; height: 100%; 
-        display: flex; flex-direction:row; justify-content:space-between;margin-left: 3.2%;}
-    .mainnav {align-content: center;}
-    .mainnav > li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
-    .mainnav li:nth-of-type(1) {padding-left: 0;}
-    .search {
-        width: 414px; 
-        height: 25%; 
-        text-align: center; margin-top:30px; 
-        border: none; 
-        outline: none; 
-        border-radius: 20px;
-        background: #EBEBEB;
-        color: #fff;
-    }
-    .container_nav img {margin-top: 3px;}
-
-    .mainnav > li {
-        position: relative; /* 기준점 역할 */
-    }
-
-    .subnav {
-        display: none; 
-        position: absolute;
-        top: 100%; /* li 아래에 뜸 */
-        left: 0;
-        background: white;
-        z-index: 999; 
-        width: 120%;
-        height:fit-content;
-        margin-left: -10px;
-        padding-left: 10px;
-        
-    }
-
-    .subnav li:nth-of-type(1) {padding-top: 40px}
-    .subnav li:nth-of-type(5) {padding-bottom: 10px}
-    .subnav li {padding-top: 10px; width: 50px;}
-    .subnav li a{color: #377C4C; text-decoration: none;}
-    .subnav li a:hover {color: #FF6700;}
-    .subnav li a:active {color: #FF6700;}
 
 
     /* 슬라이더 */
@@ -557,50 +402,6 @@ footer > div{align-content: center; padding-left: 2%;}
     margin: 0 auto;}
 .container {width: 75%; border: 1px solid; margin: 0 auto; height: 100%;}
 header {width: 100%;display: flex;}
-
-    /* 네비 */
-    .container_nav{width: 100%; height: 90px; display: flex;}
-    nav {width: 53%; height: 100%; 
-        display: flex; flex-direction:row; justify-content:space-between;margin-left: 3.2%;}
-    .mainnav {align-content: center;}
-    .mainnav > li {float: left; padding-left: 40px; cursor: pointer; font-size: 15px; }
-    .mainnav li:nth-of-type(1) {padding-left: 0;}
-    .search {
-        width: 414px; 
-        height: 25%; 
-        text-align: center; margin-top:30px; 
-        border: none; 
-        outline: none; 
-        border-radius: 20px;
-        background: #EBEBEB;
-        color: #fff;
-    }
-    .container_nav img {margin-top: 3px;}
-
-    .mainnav > li {
-        position: relative; /* 기준점 역할 */
-    }
-
-    .subnav {
-        display: none; 
-        position: absolute;
-        top: 100%; /* li 아래에 뜸 */
-        left: 0;
-        background: white;
-        z-index: 999; 
-        width: 120%;
-        height:fit-content;
-        margin-left: -10px;
-        padding-left: 10px;
-        
-    }
-
-    .subnav li:nth-of-type(1) {padding-top: 40px}
-    .subnav li:nth-of-type(5) {padding-bottom: 10px}
-    .subnav li {padding-top: 10px; width: 50px;}
-    .subnav li a{color: #377C4C; text-decoration: none;}
-    .subnav li a:hover {color: #FF6700;}
-    .subnav li a:active {color: #FF6700;}
 
 /* 슬라이더 */
 .sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
