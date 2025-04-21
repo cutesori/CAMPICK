@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* 폰트 사이즈 */
+.bigT {font-size: 2rem; font-weight: 600;}
+.titleT {font-size:1.67rem ; font-weight: 500; text-align: center;}
+.smallT {text-align: center; font-size: 1rem;}
+
 .container_nav{
     width: 100%; height: 90px; display: flex;
     position: fixed;
@@ -21,17 +26,27 @@
 }
 
 .about {
-    width: 100%; height:1060px;
+    width: 100%; height:700px;
     background-color: #ffe1ce;
 }
 .about div {text-align: center;}
+.about > .titleT {padding-top: 25px;}
+.about > .bigT {padding-top: 40px;}
+.about > div img {padding-top: 40px; width: 300px;}
+
 #slidewrap {width: 100%; overflow: hidden;}
-.slide {width: 300%; height: 800px ;display: flex; flex-flow: row wrap;}
-.slide div {width: 335px; height: 500px; background-color: #377C4C; border-radius: 10px;margin-left: 20px; overflow: hidden;}
+#slidewrap > .titleT {padding-top: 40px;}
+.slide {width: 300%; height: 540px ;display: flex; flex-flow: row wrap; padding-top: 20px;}
+.slide li {width: 335px; height: 500px; border-radius: 10px;margin-left: 20px; overflow: hidden;}
 .identity {
     width: 100%; height: 784px;
     background-color: #ffe1ce;
+    display: flex;
+    flex-flow: row wrap;
 }
+.textbox {width: 50%; text-align: center; align-content: center; height: 33.3%; font-size:1.67rem; font-weight: 600;}
+
+
 .tel {
     width: 100%; height: 400px; margin-top: 120px;
     background-color:#EBEBEB;
@@ -39,8 +54,11 @@
 .coper {
     width: 100%; height: 170px;
     background-color: #377C4C;
+    /* overflow: hidden; */
 }
-
+.coperul {display: flex; flex-flow: row wrap; justify-content: flex-start;}
+.coperul li {margin-left: 20px; background-color: white; border-radius: 10px;width: 170px; height: 170px;}
+.coperul li:first-child {margin-left: 0px;}
 .map {
     width: 100%; height: 570px;
     background-color: #ffe1ce;
