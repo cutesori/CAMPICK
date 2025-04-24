@@ -17,6 +17,7 @@ ul,li,a {text-decoration: none; color: #121212;}
 html {font-size: 15px;}
 
 /* 네비 */
+.container_nav{z-index: 100; background-color: white;}
 .container_nav img {margin-top: 3px;}
 
 .mainnav > li {

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* 폰트 */
+.artT p {font-size: 1rem; line-height: 1.533rem;}
+h1{font-size: 1.6666rem;}
+.pointarticle {font-size: 1rem;line-height: 1.533rem;}
+
+/* 헤더 부분 */
+.container_nav{
+    width: 100%; height: 90px; display: flex;
+    position: fixed;
+}
+.top {
+    width: 100%; height: 730px;
+    background-color: #b9efff;
+    padding-top: 90px; /*작은 사이즈는 다른 사이즈로 줘야함*/
+}
+
+/* 콘텐츠 시작*/
+.full{width: 100%; display: flex;margin-top: 40px; flex-direction: row;}
+/* 왼쪽 콘텐츠 */
+.contentswrap {
+    width: 48.9583%;
+    /* background-color: antiquewhite; */
+    margin-left: 12.5%;
+}
+.clip {
+    width: 100%; 
+    height: 450px;
+    background-color: #4c8799;
+}
+.clip iframe {width: 100%; height: 100%;}
+
+.title {margin-top: 40px;}
+.title .round {width: 10px; height: 10px; border-radius: 50%; background-color:  #377C4C;display: inline-block;}
+.title h1 {margin-bottom: 20px;}
+.title .titlesmall {margin-bottom: 20px;}
+.artcle {
+    width: 100%;
+    height: 1297px;
+    background-color: snow;
+}
+.pointarticle {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    padding: 40px;
+    margin: 20px 0;
+}
+.inner-box{
+    background-color: white; border-radius: 10px;height: 200px;  
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+}
+
+/* 오른쪽 콘텐츠 */
+.rightcontentswrap {width: 15.625%; margin-left: 10.4166%;}
+.rightcontentswrap div {margin-bottom: 20px; border-radius: 10px;background-color: rgb(165, 165, 165);padding: 40px;}
+.keyword {
+    width: 100%; height: 323px;
+}
+.recent {
+    width: 100%; height: 710px;
+}
+.insta {
+    width: 100%; height: 360px;
+}
+.newsletter {
+    width: 100%; height: 215px;
+}
