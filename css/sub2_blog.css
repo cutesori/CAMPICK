@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'SunBatang-Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+
 /* 폰트 */
-.artT p {font-size: 1rem; line-height: 1.533rem;}
+.artT p {font-size: 1rem; line-height: 1.6rem;}
 h1{font-size: 1.6666rem;}
 .pointarticle {font-size: 1rem;line-height: 1.533rem;}
+.kywTitle {font-size: 1.6666rem;font-weight: 600;}
+.kywCtn {font-size: 1rem;margin-top: 18px; }
+.kywCtn:hover {text-decoration: underline;}
+.inner-box {font-weight: 600;}
+.commt {font-size: 1.3333rem;font-weight: 600; margin-top: 40px; margin-bottom: 20px;}
 
 /* 헤더 부분 */
 .container_nav{
@@ -25,6 +42,7 @@ h1{font-size: 1.6666rem;}
     margin-left: 12.5%;
 }
 .clip {
+
     width: 100%; 
     height: 450px;
     background-color: #4c8799;
@@ -41,7 +59,7 @@ h1{font-size: 1.6666rem;}
     background-color: snow;
 }
 .pointarticle {
-    background-color: #D9D9D9;
+    background-color:#377C4C;
     width: 100%;
     height: 280px;
     text-align: center;
@@ -53,11 +71,76 @@ h1{font-size: 1.6666rem;}
     display: flex;
     justify-content: center; /* 가로 중앙 */
     align-items: center;     /* 세로 중앙 */
+    color: #377C4C;
+    font-family: 'MaruBuri';
 }
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.comment-item:hover {
+    background-color: #f1f1f1;
+}
+
+.comment-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #377C4C;
+}
+
+.comment-body {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.comment-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+
+.reply {
+    cursor: pointer;
+    color: #377C4C;
+    font-weight: 500;
+}
+
+.reply:hover {
+    text-decoration: underline;
+}
+
+.pre, .next {border: none; background: none;}
 
 /* 오른쪽 콘텐츠 */
 .rightcontentswrap {width: 15.625%; margin-left: 10.4166%;}
-.rightcontentswrap div {margin-bottom: 20px; border-radius: 10px;background-color: rgb(165, 165, 165);padding: 40px;}
+.keyword,.recent, .insta, .newsletter{
+    margin-bottom: 20px; border-radius: 10px;background-color:#f9f9f9;padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+.keyword:hover{ background-color: #f1f1f1;}
+.recent:hover{ background-color: #f1f1f1;}
+.insta:hover{ background-color: #f1f1f1;}
+.newsletter:hover { background-color: #f1f1f1;}
 .keyword {
     width: 100%; height: 323px;
 }
@@ -67,6 +150,16 @@ h1{font-size: 1.6666rem;}
 .insta {
     width: 100%; height: 360px;
 }
+.instabox {display: flex; width: 100%; justify-content: space-between;flex-flow: row wrap;margin-top: 20px;}
+.recentbox {width: 29%;height: 64px; overflow: hidden;}
+.recentbox:hover {filter: brightness(0.5)}
+.recentbox:nth-of-type(4) {margin: 15px 0;}
+.recentbox:nth-of-type(5) {margin: 15px 0;}
+.recentbox:nth-of-type(6) {margin: 15px 0;}
+.recentbox a img {width: 100%;height: 100%;}
+.recentbox a {width: 100%;height: 100%;}
+
+
 .newsletter {
     width: 100%; height: 215px;
 }
