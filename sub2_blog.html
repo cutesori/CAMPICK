@@ -14,11 +14,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/sub2_blog.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>    
     <header>
         <div class="container_nav">
-            <div class="logo"><img src="./img/main/logo_1.png" alt="logo1"></div>
+            <div class="logo"><a href="./index.html"><img src="./img/main/logo_1.png" alt="logo1"></a></div>
             <nav>
                 <ul class="mainnav">
                     <li>카테고리
@@ -40,10 +41,19 @@
             </div>
         </div>       
 
-
         <div class="top">
-            <span>CAMPICK.<br>캠핑 장비, 쉽게 픽(Pick)하다!</span>
-        </div>
+            <div class="contentswrap">
+                <div class="topT">
+                    CAMPICK. <br>
+                    캠핑 장비, 쉽게 픽(Pick)하다!
+                </div>
+                <div class="contactus">            
+                    <a href="./sub1_cop.html"><img src="./img/sub01_cop/contact.png" alt="contact"></a>
+                </div>
+            </div>
+
+        </div> 
+
     </header>
  <!-- 콘텐츠 시작 -->
     <div class="full">
@@ -62,7 +72,7 @@
                 <h1>캠핑은 가볍게, 장비는 빌리게</h1>
                 <div class="titlesmall">
                     <span class="round"></span>
-                    <span>campick</span>
+                    <span class="writer">campick</span>
                     <span class="round"></span>
                     <span>comments(05)</span>
                 </div>
@@ -75,12 +85,12 @@
                         CAMPICK은 그런 마음에서 출발한 브랜드입니다.
                         우리는 캠핑 장비를 ‘빌려 쓰는 것’이야말로 지구를 위한 가장 친환경적인 선택이라고 믿습니다.
                         매년 수많은 캠핑 장비가 생산되고, 잠깐 쓰이다가 버려집니다.
-                        특히 텐트, 테이블, 의자, 각종 소품들은 대부분 한두 번 쓰고 창고에 잠들거나, 폐기되기 일쑤죠.
+                        특히 텐트, 테이블, 의자, 각종 소품들은 <br>대부분 한두 번 쓰고 창고에 잠들거나, 폐기되기 일쑤죠.
                         이런 소비 패턴은 자원 낭비는 물론, 탄소 배출까지 초래합니다.
                         그래서 CAMPICK은 ‘소유’ 대신 ‘공유’를 제안합니다.
                         필요할 때만 빌려 쓰고, 다시 자연으로 돌려주는 구조.
                         환경을 위해 우리가 할 수 있는 실천은 생각보다 간단합니다.
-                        누군가 쓰던 장비를 내가 쓰고, 내가 썼던 장비를 또 누군가가 쓴다면?
+                        누군가 쓰던 장비를 내가 쓰고, <br>내가 썼던 장비를 또 누군가가 쓴다면?
                         그 하나의 선택이 자연을 지키는 큰 발걸음이 될 수 있습니다.
                         CAMPICK은 단순한 캠핑 장비 렌탈 플랫폼이 아닙니다.
                         우리는 지속가능한 캠핑 문화를 만들고자 합니다.
@@ -103,10 +113,11 @@
                     <p>
                         또한 제품 포장 시에는 불필요한 비닐이나 플라스틱을 줄이고,
                         재활용 가능한 친환경 소재를 적극 사용합니다.
-                        배송 역시 친환경 업체와 협업하여, 탄소 배출을 최소화하는 방향으로 운영하고 있습니다.
+                        배송 역시 친환경 업체와 협업하여, 탄소 배출을 <br>최소화하는 방향으로 운영하고 있습니다.
                         자연을 느끼고, 자연을 지키는 캠핑.
                         그 중심에 CAMPICK이 있기를 바랍니다.
-                        우리는 이 작은 실천들이 모여 큰 변화를 만들 수 있다고 믿습니다.
+                        우리는 이 작은 실천들이 모여 큰 변화를 <br>만들 수 있다고 믿습니다.
+                        <br>
                         당신의 첫 캠핑이 누군가의 마지막 캠핑 장비에서 시작될 수도 있습니다.
                         그 연결이 곧 ‘지속가능성’입니다.
                         캠핑을 좋아하는 사람들이 자연을 사랑하게 되고,
@@ -117,7 +128,7 @@
                         쉽고, 멋진 선택이라는 걸 함께 나누고 싶습니다.
                         오늘의 선택이 내일의 지구를 만듭니다.
                         CAMPICK은 더 나은 내일을 위한 선택지를 준비하고 있습니다.
-                        지속가능한 캠핑의 시작, CAMPICK과 함께하세요.
+                        지속가능한 캠핑의 시작, CAMPICK과 함께하세요. <br><br>
                         자연과 나, 그리고 당신의 연결고리.
                         CAMPICK은 그 중심에 있습니다.
                     </p>
@@ -127,11 +138,14 @@
             <hr>
             <br>
 
-            <div class="like">
-                <img src="./img/main/like1.png" alt="like">
+            <div class="under">
+            <img src="./img/main/like1.png" alt="like1" class="likeImage">
+            
+                <div class="btn">
+                    <button class="pre" id="prevButton"><img src="./img/sub02_blog/pre.png" alt="prebutton" id="prevImage"></button>
+                    <button class="next" id="nextButton"><img src="./img/sub02_blog/next.png" alt="nextbutton" id="nextImage"></button>
+                </div>
             </div>
-            <button class="pre"><img src="./img/sub02_blog/pre.png" alt="prebutton"></button>
-            <button class="next"><img src="./img/sub02_blog/next.png" alt="nextbutton"></button>
 
 
             <div class="commt">베스트 댓글</div>
@@ -220,6 +234,61 @@
             </div>
             <div class="recent">
                 <div class="kywTitle">최근 게시물</div>
+                <div>
+                    <ul>
+                        <li>                
+                            <div class="kyw-header">
+                                <img src="./img/sub02_blog/recent01.jpg" alt="recent01" style="width: 100px; height: 100px;">
+                                <div class="kyw-body1">
+                                    <p class="kyw-body">유익한 캠핑 팁을 알아보자</p>                                   
+                                    <span class="date">2025-04-21</span>
+                                    <span class="reply">댓글(12)</span>      
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="kyw-header">
+                                <img src="./img/sub02_blog/recent02.jpg" alt="recent02" style="width: 100px; height: 100px;">
+                                <div class="kyw-body1">
+                                    <p class="kyw-body">혼자서도 잘해요</p>                                   
+                                    <span class="date">2025-04-20</span>
+                                    <span class="reply">댓글(12)</span>      
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kyw-header">
+                                <img src="./img/sub02_blog/recent03.jpg" alt="recent03" style="width: 100px; height: 100px;">
+                                <div class="kyw-body1">
+                                    <p class="kyw-body">초보자들을 위한 텐트 가이드</p>                                   
+                                    <span class="date">2025-04-13</span>
+                                    <span class="reply">댓글(05)</span>      
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kyw-header">
+                                <img src="./img/sub02_blog/recent04.jpg" alt="recent04" style="width: 100px; height: 100px;">
+                                <div class="kyw-body1">
+                                    <p class="kyw-body">캠핑 에티켓은 반려동물도 </p>                                   
+                                    <span class="date">2025-04-15</span>
+                                    <span class="reply">댓글(08)</span>      
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kyw-header">
+                                <img src="./img/sub02_blog/recent05.jpg" alt="recent05" style="width: 100px; height: 100px;">
+                                <div class="kyw-body1">
+                                    <p class="kyw-body">캠핑 기록을<br>제대로하는 방법</p>                                   
+                                    <span class="date">2025-04-21</span>
+                                    <span class="reply">댓글(02)</span>      
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="insta">
                 <div class="kywTitle">인스타 게시물</div>
@@ -239,8 +308,10 @@
             </div>
             <div class="newsletter">
                 <div class="kywTitle">뉴스레터</div>
-                <input type="email" placeholder="이메일을 입력해주세요.">
-                <button>Campick 소식 듣기</button>
+                <div class="letter">
+                    <input type="email" placeholder="이메일을 입력해주세요.">
+                    <button>Campick 소식 듣기</button>
+                </div>
             </div>
         </div>
     </div>    

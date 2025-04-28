@@ -5,17 +5,28 @@
 .titleT {font-size:1.67rem ; font-weight: 500; text-align: center;}
 .smallT {text-align: center; font-size: 1rem;}
 .top span{font-size: 2.5rem; font-weight: 600;}
+.topT{font-size: 2rem; font-weight: 600; justify-items: center;margin-top: 40px;color: #EBEBEB;}
+.topsmallT {color: #EBEBEB;}
+
 
 .container_nav{
     width: 100%; height: 90px; display: flex;
     position: fixed;
     background-color: #a7ffc1;
 }
-
 .top {
-    width: 100%; height: 730px;
+    width: 100%; height: 400px;
     background-color: #b9efff;
-    /* position: relative; */
+    padding-top: 90px; /*작은 사이즈는 다른 사이즈로 줘야함*/
+    display: flex;
+    background-image: url('/img/sub01_cop/top.jpg');
+}
+/* .top:hover ::backdrop {filter: brightness(0.8);} */
+.contactus {margin-top: 20px;}
+.contactus:hover img {
+    transition: ease-out;
+    transform: rotate(45deg);
+    transform-origin: center;
 }
 
 .top span {position: absolute; top: 50%;}
@@ -35,10 +46,10 @@
 .about > .bigT {padding-top: 40px;}
 .about > div img {padding-top: 40px; width: 300px;}
 
-#slidewrap {width: 100%; overflow: hidden;}
-#slidewrap > .titleT {padding-top: 40px;}
-.slide {width: 300%; height: 540px ;display: flex; flex-flow: row wrap; padding-top: 20px;}
-.slide li {width: 335px; height: 500px; border-radius: 10px;margin-left: 20px; overflow: hidden;}
+#sub1slidewrap {width: 100%; overflow: hidden;}
+#sub1slidewrap > .titleT {padding-top: 40px;}
+.sub1slide {width: 300%; height: 540px ;display: flex; flex-flow: row wrap; padding-top: 20px;}
+.sub1slide li {width: 335px; height: 500px; border-radius: 10px;margin-left: 20px; overflow: hidden;}
 .identity {
     width: 100%; height: 784px;
     background-color: #ffe1ce;

@@ -16,11 +16,27 @@
 .artT p {font-size: 1rem; line-height: 1.6rem;}
 h1{font-size: 1.6666rem;}
 .pointarticle {font-size: 1rem;line-height: 1.533rem;}
-.kywTitle {font-size: 1.6666rem;font-weight: 600;}
+.kywTitle {font-size: 1.6666rem;font-weight: 600; margin-bottom: 20px;}
 .kywCtn {font-size: 1rem;margin-top: 18px; }
 .kywCtn:hover {text-decoration: underline;}
 .inner-box {font-weight: 600;}
 .commt {font-size: 1.3333rem;font-weight: 600; margin-top: 40px; margin-bottom: 20px;}
+.titlesmall span {font-weight: 600;}
+.kyw-body {    
+    font-size: 1rem;
+    line-height: 1.5;
+    /* color: #333; */
+}
+.kyw-body:hover {text-decoration: underline;}
+.date, .reply{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #333;
+}
+.topT{font-size: 2rem; font-weight: 600; justify-items: center;margin-top: 40px;}
+
+
+
 
 /* 헤더 부분 */
 .container_nav{
@@ -28,9 +44,17 @@ h1{font-size: 1.6666rem;}
     position: fixed;
 }
 .top {
-    width: 100%; height: 730px;
+    width: 100%; height: 400px;
     background-color: #b9efff;
     padding-top: 90px; /*작은 사이즈는 다른 사이즈로 줘야함*/
+    display: flex;
+    background-image: url('/img/sub01_cop/subup.jpg');
+}
+.contactus {margin-top: 20px;}
+.contactus:hover img {
+    transition: ease-out;
+    transform: rotate(45deg);
+    transform-origin: center;
 }
 
 /* 콘텐츠 시작*/
@@ -102,7 +126,7 @@ h1{font-size: 1.6666rem;}
 }
 
 .comment-body {
-    font-size: 14px;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 10px;
     color: #333;
@@ -111,21 +135,27 @@ h1{font-size: 1.6666rem;}
 .comment-footer {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size:0.8rem;
     color: #888;
 }
 
 .reply {
     cursor: pointer;
-    color: #377C4C;
+    color: #333;
     font-weight: 500;
 }
 
-.reply:hover {
+.comment-footer .reply:hover {
     text-decoration: underline;
 }
 
+.writer {padding-right: 20px;}
 .pre, .next {border: none; background: none;}
+
+.under {display: flex; justify-content: space-between;}
+.btn a img{cursor: pointer;}
+
+.pre a img:hover img{content: url('./img/sub02_blog/pre2.png');}
 
 /* 오른쪽 콘텐츠 */
 .rightcontentswrap {width: 15.625%; margin-left: 10.4166%;}
@@ -137,6 +167,12 @@ h1{font-size: 1.6666rem;}
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     transition: 0.3s ease;
 }
+
+.kyw-body1 {width: 45%; display: flex; flex-flow: column wrap; justify-content: space-between;cursor: pointer;}
+.kyw-header {display: flex; justify-content: space-between; flex-flow: row wrap;margin-bottom: 20px;cursor: pointer;}
+.kyw-footer {display: flex;justify-content: space-between; margin-top: 10px; cursor: pointer;}
+.kyw-header img:hover {filter: brightness(0.5)}
+
 .keyword:hover{ background-color: #f1f1f1;}
 .recent:hover{ background-color: #f1f1f1;}
 .insta:hover{ background-color: #f1f1f1;}
@@ -163,3 +199,6 @@ h1{font-size: 1.6666rem;}
 .newsletter {
     width: 100%; height: 215px;
 }
+.letter button {cursor: pointer;height: 40%; background-color: #377C4C; border: none; color: #f9f9f9; border-radius: 5px;}
+.letter button:hover {color: #377C4C;}
+.letter {display: flex; flex-flow: column wrap; justify-content: space-between; margin-top: 20px;height: 50%;}

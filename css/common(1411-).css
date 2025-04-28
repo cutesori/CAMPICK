@@ -46,3 +46,9 @@
         .subnav li a:hover {color: #FF6700;}
         .subnav li a:active {color: #FF6700;}
     }
+
+    /* 슬라이더 */
+    .sliderwrap {width: 100%; height:auto ; overflow: hidden; margin-bottom: 40px;}
+    .slide {width: 320%;height: 100%; margin-left: -65%;}
+    .slide li{width: 24%;float: left; padding: 0 0.3%;}
+    .slide li img {width: 100%;}  
