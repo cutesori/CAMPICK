@@ -2,26 +2,26 @@
 
 /* 폰트 사이즈 */
 .bigT {font-size: 2rem; font-weight: 600;}
-.titleT {font-size:1.67rem ; font-weight: 500; text-align: center;}
-.smallT {text-align: center; font-size: 1rem;}
+.titleT {font-size:1.2rem ; font-weight: 600; text-align: center; margin-top: 80px; margin-bottom: 40px;}
+.smallT {text-align: center; font-size: 1rem; display: flex; justify-content: center; margin-bottom: 80px;margin-top: 40px;}
+.smallT p {align-content:center;line-height: 1.5rem;}
+.smallT2 {font-size: 1rem;line-height: 1.5rem;}
 .top span{font-size: 2.5rem; font-weight: 600;}
 .topT{font-size: 2rem; font-weight: 600; justify-items: center;margin-top: 40px;color: #EBEBEB;}
-.topsmallT {color: #EBEBEB;}
+.topsmallT {color: #EBEBEB;margin-top: 20px;}
 
 
+/* 콘텐츠 시작 */
+.contentswrap {
+    width: 100%;
+    margin-left: 12.5%;
+    margin-right:12.5%;
+}
 .container_nav{
-    width: 100%; height: 90px; display: flex;
     position: fixed;
-    background-color: #a7ffc1;
 }
-.top {
-    width: 100%; height: 400px;
-    background-color: #b9efff;
-    padding-top: 90px; /*작은 사이즈는 다른 사이즈로 줘야함*/
-    display: flex;
-    background-image: url('/img/sub01_cop/top.jpg');
-}
-/* .top:hover ::backdrop {filter: brightness(0.8);} */
+
+
 .contactus {margin-top: 20px;}
 .contactus:hover img {
     transition: ease-out;
@@ -32,46 +32,79 @@
 .top span {position: absolute; top: 50%;}
 /* 콘텐츠 */
 .contentwrap {
-    width:940px;
+    width:48.9583%;
     height: auto;
     margin: 0 auto;
 }
 
-.about {
-    width: 100%; height:700px;
-    background-color: #ffe1ce;
-}
-.about div {text-align: center;}
-.about > .titleT {padding-top: 25px;}
-.about > .bigT {padding-top: 40px;}
-.about > div img {padding-top: 40px; width: 300px;}
+
+/* 슬라이더 */
+
 
 #sub1slidewrap {width: 100%; overflow: hidden;}
-#sub1slidewrap > .titleT {padding-top: 40px;}
-.sub1slide {width: 300%; height: 540px ;display: flex; flex-flow: row wrap; padding-top: 20px;}
-.sub1slide li {width: 335px; height: 500px; border-radius: 10px;margin-left: 20px; overflow: hidden;}
-.identity {
-    width: 100%; height: 784px;
-    background-color: #ffe1ce;
-    display: flex;
-    flex-flow: row wrap;
-}
-.identity div{height: 260px;}
-.textbox {width: 50%; text-align: center; align-content: center; height: 33.3%; font-size:1.67rem; font-weight: 600;}
 
-
-.tel {
-    width: 100%; height: 400px; margin-top: 120px;
-    background-color:#EBEBEB;
+.sub1slide {
+    width: 300%; height: 500px ;
+    display: flex; flex-flow: row wrap; 
+    animation: scroll-left 35s linear infinite;
+    overflow: hidden;
 }
+.sub1slide li {width: 335px; height: 500px; border-radius: 10px;margin-left: 20px; overflow: hidden;box-shadow: 0 2px 6px rgba(0,0,0,0.05);}
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }  
+
+.sub1slide:hover {
+    animation-play-state: paused;
+  }
+.sub1slide li:hover {filter: brightness(0.8);}
+  
+/* 협력사 */
 .coper {
-    width: 100%; height: 170px;
-    background-color: #377C4C;
-    /* overflow: hidden; */
+    width: 100%;
+    height: 170px;
+    overflow: hidden; /* 부모 컨테이너에서 넘치는 부분 숨기기 */
 }
-.coperul {display: flex; flex-flow: row wrap; justify-content: flex-start;}
-.coperul li {margin-left: 20px; background-color: white; border-radius: 10px;width: 170px; height: 170px;}
-.coperul li:first-child {margin-left: 0px;}
+
+.coperul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    animation: scroll-left2 30s linear infinite;
+}
+
+.coperul li {
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 170px;
+    height: 170px;
+    flex: 0 0 auto;
+}
+
+.coperul li:first-child {
+    margin-left: 0px;
+}
+
+.coperul:hover {
+    animation-play-state: paused;
+}
+
+.coperul li:hover {
+    filter: brightness(0.8);
+}
+
+/* 애니메이션 */
+@keyframes scroll-left2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* 모든 항목이 왼쪽으로 100% 이동 */
+    }
+}
+  
 .map {
     width: 100%; height: 570px;
     background-color: #ffe1ce;

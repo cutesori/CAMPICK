@@ -45,4 +45,55 @@
     .subnav li a{color: #377C4C; text-decoration: none;}
     .subnav li a:hover {color: #FF6700;}
     .subnav li a:active {color: #FF6700;}
+
+/* sub 시작 */
+.top {
+    width: 100%; height: 400px;
+    /* background-color: #b9efff; */
+    padding-top: 90px; /*작은 사이즈는 다른 사이즈로 줘야함*/
+    display: flex;
+    background-image: url('/img/sub01_cop/subup1.jpg');
 }
+.about {
+    width: 100%;
+
+}
+.about div {text-align: center;}
+
+.about > .bigT {padding-top: 40px; padding-bottom: 20px;}
+.about > div img {width: 460px;}
+
+
+.identity {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .identity .textbox,
+    .identity .imgbox {
+        width: 100%;
+        height: 300px; /* 원하는 고정 높이로 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textbox {
+        font-size: 1.67rem;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        transition: color 1.5s ease-out;
+    }
+    
+    .imgbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .textbox.active {
+        color: #377C4C; 
+    }
+}
+

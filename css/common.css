@@ -24,18 +24,25 @@ html {font-size: 15px;}
     position: relative; /* 기준점 역할 */
 }
 
+.mainnav > li {
+    position: relative; /* 기준점 역할 */
+  }
+
+
 .subnav {
-    display: none; 
+    /* display: none;  */
     position: absolute;
     top: 100%; /* li 아래에 뜸 */
     left: 0;
     background: white;
     z-index: 999; 
-    width: 120%;
-    height:fit-content;
-    margin-left: -10px;
-    padding-left: 10px;
+    width: 310px;
+    height: 30px;
 }
+.subnav li a{color: #377C4C; text-decoration: none;}
+.subnav li a:hover {color: #FF6700;}
+.subnav li a:active {color: #FF6700;}
+
 
 .subnav li:nth-of-type(1) {padding-top: 40px}
 .subnav li:nth-of-type(5) {padding-bottom: 10px}
