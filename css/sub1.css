@@ -28,7 +28,7 @@
 
 .top span {position: absolute; top: 50%;}
 /* 콘텐츠 */
-.top { background-image: url('/img/sub01_cop/subup1.jpg');}
+.top { background-image: url('./img/sub01_cop/subup1.jpg');}
 
 /* 슬라이더 */
 
