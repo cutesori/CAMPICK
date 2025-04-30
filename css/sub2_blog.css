@@ -43,7 +43,7 @@ h1{font-size: 1.6666rem;}
 }
 .top {
 
-    background-image: url('./img/sub01_cop/subup.jpg');
+    background-image: url('../img/sub01_cop/subup.jpg');
 }
 .contactus {margin-top: 20px;}
 .contactus:hover img {
