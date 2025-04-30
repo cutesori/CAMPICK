@@ -52,7 +52,8 @@ html {font-size: 15px;}
 .subnav li a:active {color: #FF6700;}
 
 /* 푸터 */
-footer {width: 100%; height: 130px; display: flex; justify-content: space-between;}
+footer {width: 100%; height: 130px; display: flex; justify-content: space-between;border-top: #dadada 1px solid; }
 footer img {padding: 20px;}
 footer > div{align-content: center; padding-left: 2%;}
+.footerT div {color: #444444; font-size: 0.8rem;}
 

@@ -4,7 +4,8 @@
 
     /* 네비 */
     .logo {text-align: center;}
-    .container_nav{width: 100%; height: 200px; display: flex; flex-direction: column}
+    .container_nav{width: 100%; height: 200px; display: flex; flex-direction: column;position:relative;}
+    
     nav {width: 100%; height: 100%; 
         display: flex; flex-direction:row; justify-content:center}
     .mainnav {align-content: center;}
@@ -21,7 +22,8 @@
         color: #fff;
         
     }
-    .srh {text-align: center;position: relative;;bottom: 15px;}
+    .srh {text-align: center;position: relative;bottom: 15px;}
+    
     .container_nav img {margin-top: 3px;}
 
     .mainnav > li {
@@ -52,13 +54,16 @@
 
 
 /* sub 시작 */
+.contentwrap {
+    width:60%;
+    height: auto;
+    margin: 0 auto;
+}
+
 
 .top {
-    width: 100%; height: 500px;
-    /* background-color: #b9efff; */
-    padding-top: 200px; /*작은 사이즈는 다른 사이즈로 줘야함*/
+    width: 100%; height: 300px;
     display: flex;
-    background-image: url('/img/sub01_cop/subup1.jpg');
 }
 
 .about {
@@ -78,3 +83,93 @@
 .about>div img {
     width: 360px;
 }
+
+.identity {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.identity .textbox,
+.identity .imgbox {
+    width: 100%;
+    height: 300px; /* 원하는 고정 높이로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    font-size: 1.67rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transition: color 1.5s ease-out;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textbox.active {
+    color: #377C4C; 
+}
+
+.map {
+    width: 100%; height: 400px;
+    background-color: #ffe1ce;
+}
+
+/* sub2 blog*/
+.full{width: 100%; display: flex;margin-top: 40px; flex-direction: column; padding: 0 40px;}
+/* 왼쪽 콘텐츠 */
+.contentswrap {
+    width: 100%;
+}
+.top > .contentswrap {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.rightcontentswrap{display: flex; flex-flow: row wrap;width: 100%;justify-content: space-between;}
+.keyword {
+    width: 48%; height: fit-content;margin-top: 20px;
+}
+.recent {
+    width: 48%; height: fit-content;margin-top: 20px;
+}
+.insta {
+    width: 48%; height: fit-content;margin-top: 20px;
+}
+.newsletter {
+    width: 48%; height: fit-content;margin-top: 20px;
+}
+
+
+.top {
+    width: 100%;
+    height: 300px;
+    /* padding-top: 90px; */
+    display: flex;
+}
+
+.contactus {display: hidden;}
+
+
+.clip {
+    width: 100%; 
+    height:400px;
+}
+
+.kyw-body1 {width: 65%; display: flex; flex-flow: column wrap; justify-content: space-between;cursor: pointer;}
+.kyw-header {display: flex; justify-content: space-between; flex-flow: row wrap;margin-bottom: 20px;cursor: pointer;}
+.kyw-footer {display: flex;justify-content: space-between; margin-top: 10px; cursor: pointer;}
+.kyw-header img:hover {filter: brightness(0.5)}
+
+
+.instabox {display: flex; width: 100%; justify-content: space-between;flex-flow: row wrap;margin-top: 20px;}
+.recentbox {width: 30%; height:  30%; overflow: hidden; margin-bottom: 8px;}
+
+.pointarticle {font-size: 0.9rem;line-height: 1.533rem;height: 380px;}
+.inner-box {height: 300px;padding: 20px;}
+.topT{font-size: 2rem; font-weight: 600; justify-items: center;}

@@ -50,3 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  $(function(){
+
+    $(".mainnav > li").click(function(){
+      $(".subnav").slideToggle();
+
+      });
+
+    });

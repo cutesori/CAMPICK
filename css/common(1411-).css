@@ -2,6 +2,7 @@
 
 @media all and (min-width:1411px) {
 
+    .contentwrap {width: 48.9583%; margin: 0 auto;}
     /* 네비 */
     .container_nav {
         width: 100%;
@@ -53,7 +54,10 @@
         position: relative;
         /* 기준점 역할 */
     }
-
+    .container_nav{
+        position: fixed;
+    }
+    
     .subnav {
         display: none;
         position: absolute;
@@ -97,14 +101,19 @@
 
 
     /* suv 시작 */
+    .full{width: 100%; display: flex;margin-top: 40px; flex-direction: row;}
+    /* 왼쪽 콘텐츠 */
+    .contentswrap {
+        width: 48.9583%;
+        /* background-color: antiquewhite; */
+        margin-left: 12.5%;
+    }
+    
     .top {
         width: 100%;
         height: 400px;
-        /* background-color: #b9efff; */
         padding-top: 90px;
-        /*작은 사이즈는 다른 사이즈로 줘야함*/
         display: flex;
-        background-image: url('/img/sub01_cop/subup1.jpg');
     }
 
     .about {
@@ -184,3 +193,27 @@
 .slide li img {
     width: 100%;
 }
+
+.map {
+    width: 100%; height: 570px;
+    background-color: #ffe1ce;
+}
+
+/* sub2 blog*/
+.rightcontentswrap {width: 20%; margin-left: 10.4166%;}
+
+.clip {
+
+    width: 100%; 
+    height: 450px;
+
+}
+
+.kyw-body1 {width: 60%; display: flex; flex-flow: column wrap; justify-content: space-between;cursor: pointer;}
+.kyw-header {display: flex; justify-content: space-between; flex-flow: row wrap;margin-bottom: 20px;cursor: pointer;}
+.kyw-footer {display: flex;justify-content: space-between; margin-top: 10px; cursor: pointer;}
+.kyw-header img:hover {filter: brightness(0.5)}
+
+.instabox {display: flex; width: 100%; justify-content: space-between;flex-flow: row wrap;margin-top: 20px;}
+.recentbox {width: 29%; height:  29%; overflow: hidden; margin-bottom: 8px;}
+.topT{font-size: 2rem; font-weight: 600; justify-items: center;margin-top: 40px;}
