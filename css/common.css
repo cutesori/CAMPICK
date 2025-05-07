@@ -22,6 +22,8 @@ html {font-size: 15px;}
 
 .mainnav > li {
     position: relative; /* 기준점 역할 */
+
+
 }
 
 .mainnav > li {
@@ -50,6 +52,11 @@ html {font-size: 15px;}
 .subnav li a{color: #377C4C; text-decoration: none;}
 .subnav li a:hover {color: #FF6700;}
 .subnav li a:active {color: #FF6700;}
+
+.container_right a img {
+    position: sticky;
+    top: 80px;
+}
 
 /* 푸터 */
 footer {width: 100%; height: 130px; display: flex; justify-content: space-between;border-top: #dadada 1px solid; }
