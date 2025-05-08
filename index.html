@@ -7,10 +7,11 @@
     <title>CAMPICK 캠핑장비, 쉽게 픽하다</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/common(320-768).css">
-    <link rel="stylesheet" href="./css/common(768-1023).css">
-    <link rel="stylesheet" href="./css/common(1024-1410).css">
-    <link rel="stylesheet" href="./css/common(1411-).css">
+    
+    <link rel="stylesheet" href="./css/common(320-768).css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="./css/common(768-1023).css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="./css/common(1024-1410).css"  media="screen and (min-width: 1024px) and (max-width: 1410px)">
+    <link rel="stylesheet" href="./css/common(1411-).css" media="screen and (min-width: 1411px)">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -20,11 +21,8 @@
 <body>
     <header>
         <div class="container_nav">
-            <!-- <div class="container_side"> -->
+
             <div class="logo"><a href="./index.html"><img src="./img/main/logo_1.png" alt="logo1"></a></div>
-
-            <!-- </div> -->
-
             <nav>
                 <ul class="mainnav">
                     <li>카테고리

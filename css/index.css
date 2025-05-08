@@ -95,7 +95,7 @@ nav {width: 53.4%; height: 100%;
 /* 왼쪽 콘텐츠 */
 .container_side {width:200px; height:100%;padding-left: 2%; font-size: 4rem;font-weight: 800;}
 .container_side div {position: relative;}
-.container_side div span {position: sticky; top:0;}
+.container_side div span {position: sticky; top:80px;}
 /* .container_side div:nth-of-type(3) span {position:inherit; top:0;} */
 
 /* 중간 콘텐츠 */
