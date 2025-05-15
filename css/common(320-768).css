@@ -41,7 +41,7 @@
     }
 
     .search {
-        width: 450px;
+        width: 90%;
         height: 25px;
         text-align: center;
         margin-top: 30px;
@@ -56,8 +56,8 @@
     .srh {
         text-align: center;
         position: relative;
-        ;
         bottom: 15px;
+
     }
 
     .container_nav img {
